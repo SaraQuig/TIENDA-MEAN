@@ -20,6 +20,7 @@ const UsuarioSchema = new Schema({
     {
         timestamps: true
     })
+//necesario no borrar
 module.exports = mongoose.model('usuarios', UsuarioSchema)
 
 
