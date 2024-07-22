@@ -37,7 +37,7 @@ exports.crearUsuario = async (req, res, next) => {
     }
 }
 
-//Obteniendo los usuarios registrados
+//Obteniendo los usuarios registrados en la base
 exports.obtenerUsuarios = async (req, res) => {
 
     try {
