@@ -9,4 +9,4 @@ const OrderSchema = mongoose.Schema({
   direccionEntrega: { type: String, required: true }
 });
 
-module.exports = mongoose.model('Order', OrderSchema);
+module.exports = mongoose.model('Order', OrderSchema); //importante, no quitar

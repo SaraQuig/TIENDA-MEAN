@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-//atributos del producto
+//atributos del producto los cuales estan en la bd
 const ProductoSchema = mongoose.Schema({
     nombre: {
         type: String,
@@ -23,5 +23,5 @@ const ProductoSchema = mongoose.Schema({
         default: Date.now()
     }
 });
-
+//no borrar importante
 module.exports = mongoose.model('Producto', ProductoSchema);

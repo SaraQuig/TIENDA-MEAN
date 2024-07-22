@@ -6,4 +6,4 @@ const orderController = require('../controllers/orderController');
 // Define the route for saving cliente info
 router.post('/orders', orderController.crearOrden);
 
-module.exports = router;
+module.exports = router; //importante, no quitar

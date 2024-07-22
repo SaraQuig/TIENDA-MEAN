@@ -3,7 +3,7 @@ const Usuario = require("../models/Usuario");
 //encriptando la contraseña
 const jwt = require('jsonwebtoken');
 const { response } = require('express');
-//Registrando usuarios
+//Registrando usuarios en la base de datos
 exports.crearUsuario = async (req, res, next) => {
     try {
         const { email, psw, precio, foto  } = req.body
@@ -37,7 +37,7 @@ exports.crearUsuario = async (req, res, next) => {
     }
 }
 
-//Obteniendo los usuarios registrados
+//Obteniendo los usuarios registrados en la base
 exports.obtenerUsuarios = async (req, res) => {
 
     try {
