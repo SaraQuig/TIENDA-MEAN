@@ -17,7 +17,7 @@ exports.crearProducto = async (req, res) => {
         res.status(500).send('Hubo un error');
     }
 }
-
+//obtener productos regustrados
 exports.obtenerProductos = async (req, res) => {
 
     try {
