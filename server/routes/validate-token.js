@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 const validateToken = (req, res, next) => {
     const headerToken = req.headers['authorization']
 
-
+    //validacion
     if (headerToken != undefined && headerToken.startsWith('Bearer ')) {
         // Tiene token
         try {
