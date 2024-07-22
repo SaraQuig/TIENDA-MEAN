@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const authSchema = require('./models/Usuario')
 const authSchema_ = require('./models/Producto')
 
-//conexiones
+//conexiones a la base de datos
 authSchema.statics = {
     create: function(data,cb){
         const user = new this(data)
@@ -14,8 +14,9 @@ authSchema.statics = {
     }
 }
 
+//necesario, no quitar
 const authModel = mongoose.model('usuarios',authSchema)
 const authModel_ = mongoose.model('productos',authSchema)
-
+//modulos
 module.exports = authModel
 module.exports = authModel_

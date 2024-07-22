@@ -1,5 +1,5 @@
 const Producto = require("../models/Producto");
-
+//Todo hecho con express
 //aqui se conecta con la bbdd
 exports.crearProducto = async (req, res) => {
 
@@ -56,7 +56,7 @@ exports.actualizarProducto = async (req, res) => {
     }
 }
 
-
+//funcion para obtener productos
 exports.obtenerProducto = async (req, res) => {
 
     try {
