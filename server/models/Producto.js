@@ -23,5 +23,5 @@ const ProductoSchema = mongoose.Schema({
         default: Date.now()
     }
 });
-
+//no borrar importante
 module.exports = mongoose.model('Producto', ProductoSchema);
