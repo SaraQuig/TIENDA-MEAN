@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Usar las rutas de cliente
 app.use('/api', require('./routes/order'));
-app.use('/api', require('./routes/usuario'));
+app.use('/api/usuarios', require('./routes/usuario'));
 app.use('/api/productos', require('./routes/producto'));
 
 //conectandose al puerto
