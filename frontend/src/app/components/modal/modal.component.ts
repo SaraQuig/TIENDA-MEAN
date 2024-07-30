@@ -65,7 +65,7 @@ export class ModalComponent implements OnInit , OnDestroy{
     this._modalService.guardarOrder(modal).subscribe({
       next: (v) => {
         this.loading = false;
-        this.toastr.success(`El usuario ${this.email} a comprado en noveades ideas`, 'Compra exitosa!');
+        this.toastr.success(`El usuario ${this.email} a comprado en Market Pro`, 'Compra exitosa!');
         this.router.navigate(['/list-prod'])
       },
       error: (e: HttpErrorResponse) => {
