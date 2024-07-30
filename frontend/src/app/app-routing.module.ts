@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
   { path: 'login', component: LoginComponent },
   { path: 'listar-usuarios', component: ListarUsuariosComponent },
-  { path: 'crear-usuarios ', component: CrearUsuariosComponent },
+  { path: 'crear-usuarios', component: CrearUsuariosComponent },
   // { path: 'editar-usuario/:id', component: CrearUsuariosComponent },
   { path: 'admin-menu', component: AdminMenuComponent },
   {path: 'ingresar-prod', component: IngresarProdComponent},
@@ -27,7 +27,6 @@ const routes: Routes = [
   {path: 'list-prod', component: ListProdComponent},
   {path: 'modal', component: ModalComponent},
 
-  
   
   //Esta linea siempre debe estar al final
   { path: '**', redirectTo: '', pathMatch: 'full' }

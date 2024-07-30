@@ -1,7 +1,7 @@
 const { mongoose } = require('mongoose')
-// const Schema = mongoose.Schema
+const Schema = mongoose.Schema
 
-const UsuarioSchema = mongoose.Schema({
+const UsuarioSchema = new Schema({
     //validaciones  
     //datos que guardo de los usuarios
     email: {
@@ -20,8 +20,7 @@ const UsuarioSchema = mongoose.Schema({
     {
         timestamps: true
     })
-//necesario no borrar
-module.exports = mongoose.model('Usuario', UsuarioSchema)
+module.exports = mongoose.model('usuarios', UsuarioSchema)
 
 
 

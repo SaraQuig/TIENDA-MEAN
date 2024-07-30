@@ -3,13 +3,13 @@ const Usuario = require("../models/Usuario");
 //encriptando la contraseña
 const jwt = require('jsonwebtoken');
 const { response } = require('express');
-//Registrando usuarios en la base de datos
+//Registrando usuarios
 exports.crearUsuario = async (req, res, next) => {
     try {
         const { email, psw} = req.body
         const hashPassword = await bcrypt.hash(psw, 10);
 
-        const usuario = new Usuario({ psw: hashPassword, email: email });
+        const usuario = new Usuario({ psw: hashPassword, email: email});
         await usuario.save();
 
         // User saved, create JWT
@@ -37,7 +37,7 @@ exports.crearUsuario = async (req, res, next) => {
     }
 }
 
-//Obteniendo los usuarios registrados en la base
+//Obteniendo los usuarios registrados
 exports.obtenerUsuarios = async (req, res) => {
 
     try {
