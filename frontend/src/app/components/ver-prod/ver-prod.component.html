@@ -1,8 +1,9 @@
 <app-navbar></app-navbar>
-<div class="container mt-5">
-  <div class="row">
-      <div class="col-lg-8 offset-lg-2">
-          <div class="card">
+<div class="x">
+  <div class="row_">
+      <!-- Columna para la lista de productos -->
+      <div class="col-lg-6">
+          <div class="card card-lista">
               <div class="card-body text-center">
                   <span class="titulo">LISTADO DE PRODUCTOS</span>
                   <button class="btn btn-success float-end" routerLink="/ingresar-prod">NUEVO</button>
@@ -31,6 +32,10 @@
                     <h5 style="text-align: start; margin-top: 10px;" *ngIf="listProductos.length == 0">No hay productos para mostrar</h5>
               </div>
           </div>
+      </div>
+      <!-- Columna para la imagen -->
+      <div class="col-lg-6 d-none d-lg-block p-0 imagen">
+          <img src="../../../assets/img/tiendaa.jpg" alt="Imagen" class="img-fluid h-100 w-100">
       </div>
   </div>
 </div>
