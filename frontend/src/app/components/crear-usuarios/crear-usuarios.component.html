@@ -1,9 +1,13 @@
-<p>crear-usuarios works!</p>
 <app-navbar></app-navbar>
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-            <div class="card">
+<div class="wrapper">
+    <div class="cont">
+        <!-- Columna para la imagen -->
+        <div class="col-lg-6 d-none d-lg-block p-0">
+            <img src="../../../assets/img/t8.jpg" alt="Imagen" class="img-fluid h-100">
+        </div>
+        <!-- Columna para el formulario -->
+        <div class="col-lg-6 d-flex align-items-center justify-content-center">
+            <div class="card w-75">
                 <div class="card-body text-center">
                     <span class="titulo"> {{ titulo | uppercase }}</span>
                     <form class="mt-3" [formGroup]="usuarioForm" (ngSubmit)="agregarUsuario()">
