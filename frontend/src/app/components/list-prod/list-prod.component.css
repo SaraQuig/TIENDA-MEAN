@@ -1,60 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 /* Encabezado */
-a{
-    color: black;
-}
-.logo a{
-    font-family: 'Abril Fatface', serif;
-    font-size: 70px;
-    padding-left: 20px;
-    color: black ;
-}
-.logo{
-    padding: 25px;
-}
-
-nav {
+/* Ajustes para el header */
+.menu {
     display: flex;
+    align-items: center; /* Centra verticalmente */
     justify-content: space-between;
-    position: absolute;
+    padding: 10px 10px; /* Espaciado alrededor del contenido */
+    height: 60px;
+    width: 100%;
+    position: fixed;
     top: 0;
-    width: 100%;
-    z-index: 999;
-}
-
-.lista{
-    padding: 100px;
-}
-
-/*diseño de galeria de ropa*/
-.cont{
-    width: 100%;
+    left: 0;
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+    background-color: white; /* O el color de fondo que prefieras */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra para mejor visibilidad */
+  }
+  
+  .logo {
     display: flex;
-    height: 500px;
+    align-items: center; /* Centra verticalmente */
+  }
+  
+  .logo img {
+    margin-right: 10px; /* Espaciado entre la imagen y el texto */
+  }
+  .logo a{
+    font-weight: bold;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+  }
+  
+  .nav-link {
+    margin-left: 15px; /* Espaciado entre los enlaces */
+  }
+  .menu a{
+    color: black;
+  }
+  .menu img{
+    width: 50px;
+  }
+  
+  
+  /* fin de encabezado */
+  
+  
+
+.carousel-container {
+    margin-bottom: 30px;
 }
-.cont1{
-    width: 550px;
-    height: 500px;
-    padding-left: 20px;
-    padding-right: 20px;
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
 }
-.cont2{
-    width: 550px;
-    height: 500px;
-    padding-left: 20px;
-    padding-right: 20px;
+
+.carousel-caption h3 {
+    font-size: 18px;
+    font-weight: bold;
 }
-.cont-h{
-    width: 85%;
-    height: 100%;
+
+.lista .card {
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.cont-h img{
-    width: 500px;
-    height: 100%;
+
+.lista .card-body {
+    padding: 20px;
 }
+
+.lista .titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.lista table {
+    margin-top: 20px;
+}
+
+.lista .productos-carrito {
+    margin-top: 20px;
+}
+
+.lista .productos-carrito ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista .productos-carrito ul li {
+    margin-bottom: 10px;
+}
+
+.lista .productos-carrito button {
+    margin-left: 10px;
+}
+
+.lista .alert {
+    margin-top: 20px;
+}
+
+
+
 
 
 /*diseño de footer*/
@@ -83,7 +142,7 @@ nav {
   }
   
   .content {
-    color: white;
+    color: black;
     font-weight: 600;
     text-align: center;
     box-sizing: border-box;
