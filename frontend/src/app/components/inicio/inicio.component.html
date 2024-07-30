@@ -2,23 +2,28 @@
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 </style>
 
-<nav class="navbar navbar-expand-sm navbar-dark">
-  <div class="logo">
-    <a class="navbar-brand" href="#">MARKET PRO</a>
-  </div>  
-  <div class="productos-link">
-    <a class="nav-link nav-item navbar-nav" routerLink="/list-prod">VER PRODUCTOS</a> <!-- Enlace Ver Productos -->
-  </div>
-  <div class="left-links">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/login">INCIAR SESIÓN</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<div class="menu">
+  <nav class="navbar navbar-expand-sm navbar-dark">
+    <div class="logo">
+      <img src="../../../assets/img/LOGO-MARKETPRO.png" alt="Logo marketpro">
+      <a class="navbar-brand" href="#">MARKETPRO</a>  
+    </div>  
+    <div class="left-links">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/login">INICIAR SESIÓN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/list-prod">VER PRODUCTOS</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
 
 <!-- Fin de encabezado  -->
+
+
 <div class="container-fluid_">
   <div id="carouselExampleFade" class="carousel slide carousel-fade">
     <div class="carousel-inner">
@@ -55,7 +60,7 @@
 
 
 <!-- footer -->
-<footer class="container-fluid py-5" style="background-color: black;">
+<footer class="container-fluid py-5">
   <div class="floatbox">
     <div class="item">
       <div class="content">
